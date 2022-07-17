@@ -39,6 +39,7 @@ h4 {
 .top-menu:visited {
     color: #ffffff;
     float: right;
+    float: top;
     font-size: 26pt;
     margin-right: 20px;
 }
@@ -67,4 +68,95 @@ h4 {
 .btn-secondary:hover {
     color: #FFFFFF;
     background-color: #C25100;
+}
+
+.user,
+.user:hover{
+    color: #2da1c1;
+    font-size: small;
+    text-decoration: none;
+    float: right;
+}
+
+.log,
+.log:hover{
+    color: #ffffff;
+    font-size: medium;
+    text-decoration: none;
+    float: right;
+    margin-bottom: 40px;
+}
+
+.tag,
+.tag:hover{
+    color: #4f585a;
+    font-size: small;
+    text-decoration: none;
+    float: left;
+    margin-bottom: 50px;
+}
+
+.child {
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+}
+
+.reply {
+    margin-left: 5px;
+}
+
+.featured-image-list{
+    object-fit: cover;
+}
+
+.card-columns {
+    @include media-breakpoint-only(lg) {
+        column-count: 4;
+    }
+    @include media-breakpoint-only(xl) {
+        column-count: 5;
+    }
+}
+
+body {
+    background: #eeeded;
+}
+
+.card {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.2s ease-in-out;
+    box-sizing: border-box;
+    margin-top:10px;
+    margin-bottom:10px;
+    background-color:#FFF;
+}
+
+.card:hover {
+    box-shadow: 0 5px 5px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.card > .card-inner {
+    padding:10px;
+}
+.card .header h2, h3 {
+    margin-bottom: 0px;
+    margin-top:0px;
+}
+.card .header {
+    margin-bottom:5px;
+}
+.card img{
+    width:100%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+}
+
+.post {
+    height: 200px;
+    background: #ccc;
 }
